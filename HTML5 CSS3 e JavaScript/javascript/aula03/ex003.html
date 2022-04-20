@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <!-- CSS3-->
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+            font: normal 20px Arial;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HTML5-->
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        //JavaScript
+        var n1 = window.prompt('Digite um número:') // Janela que pergunta
+
+        var n2 = Number.parseInt(window.prompt('Digite outro número:'))
+
+        var n3 = Number(window.prompt('Digite outro número:'))
+
+        var s = parseInt(n1) + n2 + n3
+
+        // window.alert('A soma é igual a ' + String(s + '3') + '!') // Impressao por meio de contacatenação 
+
+        window.alert(`A soma entre ${n1} , ${n2} e ${n3} é igual a ${s}!`) // Escrita por meio de template string
+
+        window.alert(('javascript').length)
+        // (number + number) para adicao
+        // (string + string) para concatenacao
+    </script>
+</body>
+
+</html>
