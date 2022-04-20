@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Teste abrir em outros dispositivos ou redimensione o navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/imgp.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="img/imgm.png" type="image/png">
+        <img src="img/imgg.png" alt="imagem felx">
+    </picture>
+
+    <h1>Reproduzindo aúdios</h1>
+    <p>O que esse butao faz?</p>
+    <audio src="media/piano.mp3" controls autoplay></audio>
+    <p>Outra forma</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="media/vibe.mp3" type="audio/mpeg">
+        <source src="media/vibe.wmv" type="audio/wmv">
+        <p>Seu navegador não suporta esse aúdio.</p>
+        <p><a href="media/vibe.mp3"> Baixe aqui</a> o aúdio.</p>
+    </audio>
+</body>
+
+</html>
